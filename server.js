@@ -29,7 +29,7 @@ mongoClient.connect('mongodb://localhost:27017', { useNewUrlParser: true, useUni
 
     app.use((req, res) => {
       res.status(404).send({ message: 'Not found...' });
-    })
+    });
 
     app.listen('8000', () => {
       console.log('Server is running on port: 8000');
